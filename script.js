@@ -1,6 +1,10 @@
 "use strict";
 
-// const btn = document.querySelector(".btn");
-document.querySelector(".btn").addEventListener("click", function () {
-	console.log("lol");
+const toggler = document.querySelector(".btn");
+// document.querySelector(".btn").addEventListener("click", function () {
+// 	toggler.classList.toggle(".tog");
+// });
+document.querySelector(".btn").addEventListener("click", () => {
+	document.body.classList.toggle("dark");
+	toggler.classList.toggle("darkbtn");
 });
